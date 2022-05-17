@@ -1,0 +1,92 @@
+*, ::before, ::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'FontAwesome', sans-serif;
+  background-color: #bccdde;
+}
+
+.container-buttons {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  /* background-color: #FFF; */
+  min-width: 500px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.container-buttons a {
+  width: 70px;
+  height: 70px;
+  display: block;
+  border-radius: 50%;
+  /* line-height: 70px; */
+  color: #FFF;
+  background-color: #000;
+  text-decoration: none;
+  overflow: hidden;
+  text-align: center;
+  font-size: 2.2rem;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, .9);
+}
+
+.container-buttons a::before {
+  content: "\f2c6";
+  display: block;
+  margin: 19px 0;
+  transition: all .5s ease-in-out;
+}
+
+.container-buttons a:hover::before {
+  margin-top: -37px;
+}
+
+.container-buttons a::after {
+  content: "\f2c6";
+  display: block;
+}
+
+.container-buttons .two {
+  background-color: #53afff;
+}
+
+.container-buttons .two::before {
+  content: '\f293';
+}
+
+.container-buttons .three {
+  background-color: #ff8337;
+}
+
+.container-buttons .three::before {
+  content: '\f27a';
+}
+
+.container-buttons .three {
+  background-color: #ffbd39;
+}
+
+.container-buttons .three::before {
+  content: '\f2b6';
+}
+
+.container-buttons .four {
+  background-color: #e61c5d;
+}
+
+.container-buttons .four::before {
+  content: '\f004 ';
+}
+
+.container-buttons .five {
+  background-color: #155263;
+}
+
+.container-buttons .five::before {
+  content: '\f098 ';
+}
